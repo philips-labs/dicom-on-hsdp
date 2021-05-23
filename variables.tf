@@ -80,6 +80,7 @@ variable "admin_users" {
 variable "is_instance_shared" {
   description = "Is DICOM instance shared?"
   type        = bool
+  default     = false
 }
 
 variable "managing_root_definition" {
@@ -93,15 +94,17 @@ variable "managing_root_definition" {
     force_delete_object_store             = optional(bool)
     use_default_object_store_for_all_orgs = optional(bool)
     repository_organization_id            = optional(string)
+    shared_cdr_service_account_id         = optional(string)
+    mpi_endpoint                          = optional(string)
   })
   default = null
 }
 
-variable "shared_cdr_service_account_id" {
-  description = "CDR Service Account ID which is shared by HSDP Support team after onboarding to Shared instance"
-  type        = string
-  default     = null
-}
+# variable "shared_cdr_service_account_id" {
+#   description = "CDR Service Account ID which is shared by HSDP Support team after onboarding to Shared instance"
+#   type        = string
+#   default     = null
+# }
 
 variable "tenant_definitions" {
   description = "List of tenant configurations"
