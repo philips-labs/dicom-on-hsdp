@@ -27,7 +27,6 @@ No resources.
 | <a name="input_environment"></a> [environment](#input\_environment) | Possible values: `dev`, `client-test`, `prod`. | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Deployment Region. Possible values: `us-east-1`, `eu-west-1` | `string` | n/a | yes |
 | <a name="input_is_instance_shared"></a> [is_instance_shared](#input\_is\_instance\_shared) | DICOMStore deployment type.  Possible values: `true`, `false` | `bool` | false | no |
-| <a name="input_shared_cdr_service_account_id"></a> [shared\_cdr\_service\_account\_id](#input\_shared\_cdr\_service\_account\_id) | CDR Service Account ID which is shared by HSDP Support team after onboarding to Shared instance | `string` | `null` | no |
 | <a name="input_cdr_base_url"></a> [cdr\_base\_url](#input\_cdr\_base\_url) | CDR Base URL which is provided for DICOM Store onboarding (E.g: https://cdr-example.us-east.philips-healthsuite.com) | `string` | n/a | yes |
 | <a name="input_dss_config_url"></a> [dss\_config\_url](#input\_dss\_config\_url) | DICOM Store config URL (Should have received from Onboarding Request) | `string` | n/a | yes |
 | <a name="input_iam_url"></a> [iam\_url](#input\_iam\_url) | IAM URL. E.g. https://iam-development.us-east.philips-healthsuite.com | `string` | n/a | yes |
