@@ -51,7 +51,7 @@ No outputs.
 ## Best Practices
 * Always run `terraform plan` to understand the resources creation and updates.
 * Use `terrraform destroy` very carefully as this will destroy all the existing configurations which are created using `terraform apply`. Not recommended for production use cases.
-* Try avoiding the deletion of  the terraform `tfstate` files section which results in destroy of those resources.
+* Try avoiding the deletion of the terraform `tfstate` files section which results in destroy of those resources.
 * Have secure credentials in var file and provide during the terraform command execution.
 Run terraform command with var-file
 ```bash
@@ -60,7 +60,7 @@ oauth2_client_id    = "devOAuthClientId"
 oauth2_password     = "devOAuthSecret"
 org_admin_username  = "admin@philips.com"
 org_admin_password  = "mypassword"
-$ terraform plan -var-file=secrets.dev.tfvars
+$ terraform plan -var-file="secrets.dev.tfvars"
 ```
 With `var-file`, you can easily manage environment (dev/stag/prod) variables.
 
